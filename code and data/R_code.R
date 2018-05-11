@@ -36,7 +36,7 @@ map.feature(coord$Language,
 # 677 x 458
 
 # nouns destribution ------------------------------------------------------
-setwd("/home/agricolamz/_DATA/OneDrive1/_Work/_Handouts/2017 II 17.11.03 MSU Classes in Zilo/data")
+setwd("/home/agricolamz/work/materials/2017.11.03_MSU_Classes_in_Zilo/data/")
 library(tidyverse)
 library(XML)
 library(stringdist)
@@ -77,20 +77,48 @@ class_dict %>%
                                           "¬an2"))) ->
   class_dict
 
-library(extrafont)
 font_import(pattern="[B/b]rill")
 
 class_dict %>% 
   count(class) %>% 
   ggplot(aes(class, n, label = n, ymax = 220))+
   geom_bar(fill = "lightblue", stat = "identity")+
-  geom_text(vjust=-0.5)+
+  geom_text(vjust=-0.5, family="Brill", size = 7)+
   theme_bw()+
-  theme(text=element_text(family="Brill"))
-  labs(title = paste("Distribution of", 
-                     nrow(class_dict),
-                     "Zilo nouns"),
-       x = "", y = "",
+  theme(text=element_text(family="Brill", size = 18))+
+  labs(x = "", y = "",
        caption = "fieldwork data")
 
-# 700 x 500
+# 700 x 450
+  
+
+# clusterisation ----------------------------------------------------------
+setwd("/home/agricolamz/work/articles/2018_MYABL/data")
+df <- read_csv("zilo_class_experiment.csv")
+df %>% 
+    mutate(class = if_else(class == "b", 1, 0)) %>% 
+    select(-sex, -age_2017) %>% 
+    spread(s_id, class) %>% 
+    select(`1`:`16`) %>% 
+    t() ->
+    df_cluster
+  
+df %>% 
+    select(sex, age_2017, s_id) %>% 
+    distinct() ->
+    df_features
+  
+row.names(df_cluster) <- paste(c("♀", "♂")[as.factor(df_features$sex)], df_features$age_2017)
+  
+df_cluster %>% 
+  dist() %>% 
+  hclust() ->
+  hc
+  
+library(ape)
+plot(as.phylo(hc),
+       no.margin = TRUE,
+       font = 2,
+       type = "unrooted")
+
+# 700 x 450
