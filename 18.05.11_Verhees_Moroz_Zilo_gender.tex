@@ -1,0 +1,237 @@
+\documentclass[13pt, t]{beamer}
+
+% Presento style file
+\usepackage{config/presento}
+
+% custom command and packages
+\input{config/custom-command}
+
+% Information
+\title{\Large Gender attribution of borrowings and native lexemes in Zilo (Andi)}
+\author[shortname]{Samira Verhees and George Moroz \bigskip}
+\institute[shortinst]{Linguistic Convergence Laboratory, NRU HSE, Moscow, Russia}
+\date{\begin{center} 11 May 2018 г. \bigskip \\ {\color{colorblue} Anatolia-the Caucasus-Iran: Ethnic and Linguistic Contacts \\ Institute of Oriental Studies in Russian-Armenian State University} \end{center}}
+
+\begin{document}
+
+% Title page
+\begin{frame}[plain]
+\maketitle
+\end{frame}
+
+\framepic{images/01-map-all}
+
+\begin{frame}{Andi and their neighbors}
+\Large
+\begin{itemize}
+\item Nakh
+\begin{itemize}
+\item \Large Chechen
+\end{itemize}
+\item Avaro-Andic-Tsezic
+\begin{itemize}
+\item \Large Avar
+\item \Large Andi
+\begin{itemize}
+\item \Large Botlikh
+\item \Large Karata
+\item \Large Andi
+\end{itemize}
+\end{itemize}
+\end{itemize} \pause
+All Andi speakers are multilingual:
+\begin{itemize}
+\item Avar --- old lingua franca of a region
+\item Russian --- new lingua franca of a whole Daghestan (2 centuries of active Russification)
+\end{itemize}
+\end{frame}
+
+\framecard[colorblue]{{\color{colorwhite} \huge Gender systems}}
+
+% Введение
+\begin{frame}{Gender systemes}
+\Large 
+\begin{itemize}
+\item The impact the systems have most notably on verbal agreement, but also on some adjective, numeral, adverbial, pronominal, and postpositional agreement. 
+\item Some POS agree with absolutive argument of the clause. Some  POS agree with its head.
+\item In most cases gender is a covert category, but there are some exception, such as:
+\begin{itemize}
+\item \textit{w-otsːi} (\textsc{m}-sibling) 
+\item \textit{j-otsːi} (\textsc{f}-sibling)
+\item \textit{b-otsːi} (\textsc{an}-sibling) --- from the ``Three Little Pigs'' fairytale
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Andi gender inventory}
+\small
+\begin{tabular}{|l|l|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{}  & \textsc{m} & \textsc{f} & \textsc{an} & \textsc{¬an} 1 & \textsc{¬an} 2 & \textsc{¬an} 3 & \textsc{¬h} \\ \hline
+\multirow{2}{*}{\cite{alekseev99}} & \multirow{ 2}{*}{Andi} & \textsc{sg} & \multirow{2}{*}{\textit{w}} & \multirow{2}{*}{\textit{j}} & \textit{b} & \multirow{2}{*}{\textit{b}} & \multirow{2}{*}{\textit{r}} & \multicolumn{2}{|c|}{\multirow{2}{*}{\textit{-}}}  \\ \cline{3-3} \cline{6-6}
+ &  & \textsc{pl} & \textit{} & \textit{} & \textit{j} & \textit{} & \textit{} & \multicolumn{2}{|c|}{} \\ \hline
+\multirow{2}{*}{\cite{salimov10}} & \multirow{2}{*}{Gagatli} & \textsc{sg} & \multirow{2}{*}{\textit{w}} & \multirow{2}{*}{\textit{j}} & \textit{b} & \multirow{2}{*}{\textit{b}} & \multirow{2}{*}{\textit{r}} & \multicolumn{2}{|c|}{\multirow{2}{*}{\textit{-}}} \\ \cline{3-3} \cline{6-6}
+ &  & \textsc{pl} & \textit{} & \textit{} & \textit{j} & \textit{} & \textit{} & \multicolumn{2}{|c|}{} \\ \hline
+\multirow{2}{*}{\cite{suleymanov57}} & \multirow{2}{*}{Rikwani} & \textsc{sg} & \multirow{2}{*}{\textit{w}} & \textit{j} & \textit{b} & \multirow{2}{*}{\textit{b}} & \multirow{2}{*}{\textit{r}} & \textit{b} & \multirow{2}{*}{\textit{-}} \\ \cline{3-3} \cline{6-6} \cline{9-9}
+ & & \textsc{pl} & \textit{} & \textit{} & \textit{j} & \textit{} & \textit{} & \textit{r} &  \\ \hline
+\multirow{2}{*}{fieldwork} & \multirow{2}{*}{Zilo} & \textsc{sg} & \multirow{2}{*}{\textit{w}} & \multirow{2}{*}{\textit{j}} & \textit{b} & \multirow{2}{*}{\textit{b}} & \multirow{2}{*}{\textit{r}} & \multicolumn{2}{|c|}{\multirow{2}{*}{\textit{-}}}  \\ \cline{3-3} \cline{6-6}
+ & & \textsc{pl} & \textit{} & \textit{} & \textit{j}& \textit{} & \textit{} & \multicolumn{2}{|c|}{}  \\ \hline
+\multirow{2}{*}{\cite{suleymanov57}} & \multirow{2}{*}{Muni} & \textsc{sg} & \multirow{2}{*}{\textit{w}} & \multirow{2}{*}{\textit{j}} & \multicolumn{4}{|c|}{\multirow{2}{*}{\textit{-}}}  & \multirow{2}{*}{\textit{b}} \\ \cline{3-3}
+ & & \textsc{pl} & \textit{} & \textit{} & \multicolumn{4}{|c|}{} &  \\ \hline
+\end{tabular}
+\normalsize
+\begin{itemize}
+\item \textsc{m} vs. \textsc{f} vs. \textsc{¬an} vs. \textsc{¬an}s 
+\item \textsc{sg} = \textsc{pl} (except \textsc{an} and \textsc{¬an 3})
+\item Rikwani's \textsc{¬an} 3 gender  contains only several words: \textit{hotʃ'ortʃ'in} `scorpion', \textit{odoruk'a} `butterfly', and some other 5 words
+
+\item In ``lower-group'' (Muni and Kvanxidatli) there are only three genders  (\textsc{m} vs. \textsc{f} vs. \textsc{¬h})
+ 
+% СФ: не знаю куда хочешь впихнуть эту информацию, просто так она не влезет, слишком много.  
+% СФ: \item По  система верхних (с четыремя показателями) отражает исходную ситуацию аваро-андийско-цезской группы. 
+
+% ГМ: Самирча, родная, я не хочу это вставлять, потому что это мутное утверждение, я не знаю, как можно было бы красиво его доказать. Давай оставим это в нашей памяти, но сейчас я отвечаю на другой вопрос.
+
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Neighbour languages gender inventories}
+\begin{tabular}{|l|l|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{ 3}{|l|}{}& \textsc{m} & \textsc{f} & \multicolumn{ 4}{c|}{\textsc{¬h}} \\ \hline
+\multirow{ 2}{*}{\cite[41]{alekseev97}} & \multirow{ 2}{*}{Avar} & \textsc{sg} & \textit{w} & \textit{j} & \multicolumn{ 4}{c|}{\textit{b}} \\ \cline{ 3- 9}
+\multicolumn{ 1}{|l|}{} & \multicolumn{ 1}{l|}{} & \textsc{pl} & \multicolumn{ 6}{c|}{\textit{r/l}} \\ \hline
+\multirow{ 2}{*}{\cite[41]{magomedbekova71}} & \multirow{ 2}{*}{Karata} & \textsc{sg} & \textit{w} & \textit{j} & \multicolumn{ 4}{c|}{\textit{b}} \\ \cline{ 3- 9}
+\multicolumn{ 1}{|l|}{} & \multicolumn{ 1}{l|}{} & \textsc{pl} & \multicolumn{ 2}{c|}{\textit{b}} & \multicolumn{ 4}{c|}{\textit{r}} \\ \hline
+\multirow{ 2}{*}{\cite[253--254]{gudava62}} & \multirow{ 2}{*}{Botlikh} & \textsc{sg} & \textit{w} & \textit{j} & \multicolumn{ 4}{c|}{\textit{b/m}} \\ \cline{ 3- 9}
+\multicolumn{ 1}{|l|}{} & \multicolumn{ 1}{l|}{} & \textsc{pl} & \multicolumn{ 2}{c|}{\textit{b}} & \multicolumn{ 4}{c|}{\textit{r/n}} \\ \hline
+\multirow{ 2}{*}{\cite[21--22]{nichols94}} & \multirow{ 2}{*}{Chechen} & \textsc{sg} & \textit{w} & \textit{j} & \multirow{ 2}{*}{\textit{j}} & \multirow{ 2}{*}{\textit{d}} & \multirow{ 2}{*}{\textit{b}} & \textit{b} \\ \cline{ 3- 5} \cline{ 9- 9}
+\multicolumn{ 1}{|l|}{} & \multicolumn{ 1}{l|}{} & \textsc{pl} & \textit{b} & \textit{d} &  & & & \textit{d} \\ \hline
+\end{tabular}
+\vfill
+\begin{itemize}
+\item \textsc{m} vs. \textsc{f} vs. \textsc{¬h}
+\item \textsc{sg} ≠ \textsc{pl} (except Chechen)
+\end{itemize}
+\end{frame}
+
+\framepic{images/02-zilo-classes}{}
+
+\framecard[colorblue]{{\color{colorwhite} \huge Gender attribution experiment}}
+
+\begin{frame}{Experiment: set up}
+\alert{How speakers decide about new words?}
+\begin{itemize}
+\item collect 25 native and 25 loan words of \textsc{an} 1 gender
+\item collect 25 native and 25 loan words of \textsc{an} 2 gender
+\item add some words of Rikwani's \textsc{an} 3 gender
+\item pseudo random stimuli order
+\item 16 Zilo native speakers
+\item context:  \textit{di-b} / \textit{di-r} X ``my  X''
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Experiment: words}
+\begin{multicols}{2}
+\begin{itemize}
+\item[22]    kots'i broom
+\item[48]    awʔara cap
+\item[4] ʁats'a grasshopper
+\item[13]      ts'a fire
+\item[68]      nitʃo scythe
+\item[57]    rok'o heart
+\item[92]        ɬen water
+\item[29]     hark'u eye
+\item[46]      tɬ'ir bridge
+\item[25]      q'en wall
+\item[85]     reʃa tree
+\item[28]    kʷeɬir sleeve
+\item[79]    hunts'ːi honey
+% loans
+\item[98]       raketa rocket
+\item[106]       kolxoz collective farm
+\item[39] 	kalendarʲ calendar
+\item[83]         sumka bag
+\item[65]       maʃina car
+\item[58]    pasport passport
+\item[71]       simkarta  sim-card
+\item[16]      kirpitʃ brick
+\item[63]         tarif tariff
+\item[105]    rozʲetka  power outlet
+\item[45]        patʃka packet
+\item[64]      esemeska sms
+\item[75]   plastɨrʲ plaster
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Inter-rater reliability}
+Заданные вопросы можно было бы переиначить в рамках статистической задачи измерения согласия. Мы будем использовать метода перечисленные в работе \citep{hallgren12}.
+
+\begin{block}{Процент согласия}
+высчитывается как количество случае абсолютного согласия:
+$\frac{79}{106} = 0.745283$
+\end{block}
+\begin{block}{Fleiss' κ}
+Fleiss' κ for 16 Raters = 0.849 , z = 95.7, p-value = 0
+\begin{itemize}
+\item    Poor agreement — Less than 0.20
+\item    Fair agreement — 0.20 to 0.40
+\item    Moderate agreement — 0.40 to 0.60
+\item    Good agreement — 0.60 to 0.80
+\item    Very good agreement — 0.80 to 1.00
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Слова с вариативностью}
+27 вариативных слов; 16 с более чем одним респондентами: \bigskip\\
+
+\small
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+id & зиловский & русский & источник & b & r \\ \hline
+45 & patʃka & пачка & loan & 3 & 13 \\ \hline
+64 & antena & антенна & loan & 3 & 13 \\ \hline
+101 & paket & пакет & loan & 3 & 13 \\ \hline
+17 & χur & поле, огород & native & 4 & 12 \\ \hline
+44 & provod & провод & loan & 4 & 12 \\ \hline
+70 & ɡol & гол & loan & 5 & 11 \\ \hline
+21 & simkarta & сим-карта & loan & 6 & 10 \\ \hline
+24 & zatʃetka & зачетка & loan & 6 & 10 \\ \hline
+2 & vaɡon & вагон & loan & 9 & 7 \\ \hline
+20 & odoruk'a & бабочка & native & 9 & 7 \\ \hline
+39 & kalendarʲ & календарь & loan & 9 & 7 \\ \hline
+75 & plastɨrʲ & пластырь & loan & 10 & 6 \\ \hline
+41 & sputnʲik & спутник & loan & 12 & 4 \\ \hline
+98 & raketa & ракета & loan & 12 & 4 \\ \hline
+71 & kometa & комета & loan & 14 & 2 \\ \hline
+72 & lift & лифт & loan & 14 & 2 \\ \hline
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Предварительные выводы и вопросы}
+\begin{itemize}
+\item Вариативность в области классной категоризации есть.
+\item Вариативность сосредоточена в области заимствованных слов.
+\item Вариативность симметрична. Нет крена в сторону какого-то одного класса.
+\item Интересно сравнить с результатами экспериментов с искусственными словами (ср. польский родительный в работе\\ \ \hfill\citep{dabrowska05})
+\item \textit{odoruk'a} `бабочка'! Что с другими словами 6-ого рикванинского класса?
+\end{itemize}
+\end{frame}
+
+\framecard[colorblue]{{\color{colorwhite} \huge Спасибо за внимание! \bigskip\\
+\Large Пишите письма\\
+agricolamz@gmail.com\\
+jh.verhees@gmail.com}}
+
+%\begin{frame}[allowframebreaks]{Список литературы}
+\begin{frame}{Список литературы}
+\footnotesize
+\bibliographystyle{chicago}
+\bibliography{bibliography}
+\end{frame}
+
+\end{document}
