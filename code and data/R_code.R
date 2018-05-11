@@ -85,7 +85,7 @@ class_dict %>%
   geom_bar(fill = "lightblue", stat = "identity")+
   geom_text(vjust=-0.5, family="Brill", size = 7)+
   theme_bw()+
-  theme(text=element_text(family="Brill", size = 18))+
+  theme(text=element_text(family="Brill", size = 20))+
   labs(x = "", y = "",
        caption = "fieldwork data")
 
